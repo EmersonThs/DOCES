@@ -1,0 +1,82 @@
+[
+  {
+    "uso": "Texto principal",
+    "frente": "#2f2530",
+    "fundo": "#fffaf4",
+    "razao": 14.17,
+    "minimo": 4.5,
+    "aprovado": true
+  },
+  {
+    "uso": "Título e link",
+    "frente": "#842747",
+    "fundo": "#ffffff",
+    "razao": 8.89,
+    "minimo": 4.5,
+    "aprovado": true
+  },
+  {
+    "uso": "Texto sobre rosa claro",
+    "frente": "#842747",
+    "fundo": "#fff1f5",
+    "razao": 8.11,
+    "minimo": 4.5,
+    "aprovado": true
+  },
+  {
+    "uso": "Botão padrão",
+    "frente": "#ffffff",
+    "fundo": "#842747",
+    "razao": 8.89,
+    "minimo": 4.5,
+    "aprovado": true
+  },
+  {
+    "uso": "Botão hover",
+    "frente": "#ffffff",
+    "fundo": "#b93c67",
+    "razao": 5.38,
+    "minimo": 4.5,
+    "aprovado": true
+  },
+  {
+    "uso": "Texto auxiliar/placeholder",
+    "frente": "#6d5b64",
+    "fundo": "#ffffff",
+    "razao": 6.3,
+    "minimo": 4.5,
+    "aprovado": true
+  },
+  {
+    "uso": "Erro",
+    "frente": "#a12020",
+    "fundo": "#fff4f4",
+    "razao": 7.11,
+    "minimo": 4.5,
+    "aprovado": true
+  },
+  {
+    "uso": "Sucesso",
+    "frente": "#216e39",
+    "fundo": "#f3fff5",
+    "razao": 6.09,
+    "minimo": 4.5,
+    "aprovado": true
+  },
+  {
+    "uso": "Borda de controle",
+    "frente": "#8e7f86",
+    "fundo": "#ffffff",
+    "razao": 3.8,
+    "minimo": 3,
+    "aprovado": true
+  },
+  {
+    "uso": "Indicador de foco",
+    "frente": "#842747",
+    "fundo": "#fffaf4",
+    "razao": 8.56,
+    "minimo": 3,
+    "aprovado": true
+  }
+]
