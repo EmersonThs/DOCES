@@ -1,5 +1,7 @@
 # Relatório de testes — EP3
 
+Registro histórico da base EP3, preservado na EP4. Resultados adicionais e publicação da EP4 estão em [docs/ENTREGA.md](docs/ENTREGA.md), [docs/ACESSIBILIDADE.md](docs/ACESSIBILIDADE.md) e nos relatórios JSON dessa pasta.
+
 Data: 05/10/2026. Ambiente: Windows, Chrome e servidor local HTTP. Testes de interface feitos no navegador; testes das regras com o executor nativo do Node.js.
 
 ## Resultados observados

@@ -17,6 +17,16 @@
 - Duas verificações automáticas aprovadas antes da integração.
 - Branch release/1.0.0 criada a partir de develop para preparar a entrega.
 
-## Pendente de confirmação
+## Publicação confirmada em 05/10/2026
 
-Integração da release em main e publicação no GitHub Pages. A publicação foi autorizada pelo responsável, mas só será descrita como realizada depois da confirmação do endereço público. Nenhuma revisão por um segundo colaborador é alegada.
+- PR #2 integrou release/1.0.0 em main após duas verificações aprovadas: https://github.com/EmersonThs/DOCES/pull/2.
+- Commit publicado: 91a5c57f7ad0541771d5f5ed4ce84a54b7990445; tag anotada v1.0.0 enviada ao GitHub.
+- develop sincronizada com a versão estável.
+- GitHub Pages por Actions, com HTTPS e apenas o conteúdo de dist.
+- Workflow concluído com sucesso: https://github.com/EmersonThs/DOCES/actions/runs/37351953634.
+- Site verificado no Chrome: https://emersonths.github.io/DOCES/.
+- Verificados no endereço público: início, diálogo (abertura e Escape), rota de projetos, filtro por Oficina, favorito e validação vazia do cadastro (8 mensagens e foco em Nome).
+
+## Limites reais
+
+Nenhuma revisão por um segundo colaborador é alegada. Não foi executado NVDA, VoiceOver ou Narrador, nem teste em dispositivo físico ou em todos os navegadores. Zero violações automáticas não equivale a certificação de conformidade integral WCAG. O workflow concluiu com aviso de migração de runtime de actions do GitHub; não houve falha de publicação. O formulário é demonstrativo e não envia dados pessoais.

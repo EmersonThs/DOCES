@@ -4,9 +4,13 @@ Projeto acadêmico de Desenvolvimento Front-end. ONG fictícia com identidade ro
 
 Repositório de destino: https://github.com/EmersonThs/DOCES
 
+Site publicado: https://emersonths.github.io/DOCES/ — versão v1.0.0. Evidências em [docs/ENTREGA.md](docs/ENTREGA.md).
+
 ## Instalação
 
 Requisitos: Node.js 22 ou superior e pnpm 11.25.0.
+
+Clone `https://github.com/EmersonThs/DOCES.git` e entre na pasta `DOCES` antes de executar os comandos.
 
 ```sh
 pnpm install --frozen-lockfile --ignore-scripts
@@ -64,9 +68,9 @@ Antes de integrar: revisar diff, testes, build, teclado e tela móvel. Projeto i
 
 ## Publicação e manutenção
 
-Proposta: GitHub Pages via Actions. A publicação é manual, após revisão e autorização. Configure Pages com origem GitHub Actions. O workflow testa, compila e publica somente dist. CI verifica branches e pull requests sem publicar.
+GitHub Pages via Actions, publicado em 05/10/2026. A publicação é manual, após revisão e autorização. Pages está configurado com origem GitHub Actions. O workflow testa, compila e publica somente dist. CI verifica branches e pull requests sem publicar.
 
-Para rollback, reverta o commit com problema por um novo commit em main e publique novamente; preserve o histórico. O estado efetivo de repositório, PR e publicação será registrado em docs/ENTREGA.md após verificação.
+Para rollback, reverta o commit com problema por um novo commit em main e publique novamente; preserve o histórico. O estado efetivo de repositório, PR e publicação está registrado em docs/ENTREGA.md.
 
 ## Referências oficiais
 

@@ -2,7 +2,7 @@
 
 ## 1.0.0 — 05/10/2026
 
-Primeira versão preparada para publicação da Experiência IV.
+Primeira versão publicada da Experiência IV: https://emersonths.github.io/DOCES/.
 
 - Mantém a SPA da Doce Ação, filtros, favoritos e cadastro demonstrativo.
 - Melhora rótulos acessíveis, contraste de controles, foco e instruções.
@@ -12,4 +12,4 @@ Primeira versão preparada para publicação da Experiência IV.
 
 Integração de desenvolvimento: [PR #1](https://github.com/EmersonThs/DOCES/pull/1).
 
-Critério SemVer: major para incompatibilidades, minor para novos recursos compatíveis e patch para correções. A tag v1.0.0 será criada após a integração da release em main.
+Critério SemVer: major para incompatibilidades, minor para novos recursos compatíveis e patch para correções. A tag v1.0.0 identifica o commit 91a5c57, após a integração da release em main pelo PR #2. A publicação foi confirmada pelo workflow 37351953634.
