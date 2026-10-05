@@ -18,7 +18,7 @@ export function criarCard(projeto, completo = true) {
   botao.type = 'button';
   botao.dataset.favorito = projeto.id;
   botao.setAttribute('aria-pressed', String(favorito));
-  botao.setAttribute('aria-label', `${favorito ? 'Remover' : 'Salvar'} ${projeto.nome} ${favorito ? 'dos' : 'nos'} favoritos`);
+  botao.setAttribute('aria-label', favorito ? `♥ Favoritado: ${projeto.nome}. Remover dos favoritos` : `♡ Salvar favorito: ${projeto.nome}`);
   card.append(botao);
   return card;
 }

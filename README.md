@@ -1,58 +1,77 @@
-# Doce Ação — Experiência Prática III
+# Doce Ação — Experiência Prática IV
 
-Projeto acadêmico de Desenvolvimento Front-end. Evolução independente da EP2, preservando a identidade rosa e os projetos Festa que Abraça, Oficina Doce Futuro e Caixa do Bem.
+Projeto acadêmico de Desenvolvimento Front-end. ONG fictícia com identidade rosa, navegação SPA, cartões, busca, favoritos e formulário demonstrativo. Não cria inscrições nem transmite dados pessoais.
 
-## Abrir a aplicação
+Repositório de destino: https://github.com/EmersonThs/DOCES
 
-Requer Node.js 18 ou superior. Na pasta deste projeto, execute:
+## Instalação
 
-```text
-node servidor.cjs
+Requisitos: Node.js 22 ou superior e pnpm 11.25.0.
+
+```sh
+pnpm install --frozen-lockfile --ignore-scripts
+pnpm test
+pnpm run contraste
+pnpm run build
+pnpm start
 ```
 
-Abra http://127.0.0.1:8765/html/index.html no navegador. Encerre o servidor com Ctrl+C. O servidor atende apenas no próprio computador. Não abra o HTML diretamente com duplo clique: os módulos JavaScript precisam de HTTP. Também é possível usar um servidor estático de sua preferência com a raiz nesta pasta.
+Abra http://127.0.0.1:8766/ para desenvolvimento. Para testar o pacote otimizado, execute `pnpm run preview` e abra http://127.0.0.1:8767/. Ctrl+C encerra o servidor. Ambos atendem somente no próprio computador. Não abra o HTML por duplo clique: módulos ES6 precisam de HTTP.
 
-## Funcionalidades
+## Utilização
 
-- SPA com rotas `#/inicio`, `#/projetos` e `#/cadastro`, títulos, indicação da página ativa e tratamento de rota desconhecida.
-- Templates HTML e cartões gerados a partir de dados; busca por texto e filtro de favoritos.
-- Menu móvel, submenu por botão, janela informativa e mensagens de estado.
-- Cadastro demonstrativo com grupos `fieldset/legend`, máscaras, verificação de CPF, validação dos campos e mensagens associadas aos controles.
-- Favoritos e preferência de colaboração em `localStorage`, com validação dos dados e alternativa em memória se o armazenamento falhar.
-- HTML, CSS e JavaScript separados; módulos ES6 com responsabilidades específicas.
+Conheça os projetos, busque por texto, salve favoritos e filtre os itens salvos. No cadastro, use somente dados fictícios; todos os campos são obrigatórios. A forma de colaboração pode ser removida por “Esquecer minha preferência”. Os botões dos cartões permitem remover favoritos.
 
-## Organização
+Rotas: `#/inicio`, `#/projetos`, `#/cadastro`. A troca atualiza conteúdo, título, indicação de página ativa e foco. Links relativos funcionam em subdiretórios de hospedagem.
 
-```text
-html/index.html          Documento principal e templates das telas
-css/style.css            Identidade visual e layout responsivo
-imagens/doce-acao.svg     Ilustração do projeto
-js/main.js               Inicialização
-js/modulos/dados.js      Catálogo e opções permitidas
-js/modulos/roteador.js   Rotas e troca de conteúdo
-js/modulos/templates.js Cartões, pesquisa e favoritos
-js/modulos/armazenamento.js  Persistência e normalização
-js/modulos/validacao.js  Regras puras e máscaras
-js/modulos/formulario.js Feedback e envio demonstrativo
-js/modulos/ui.js         Menu e mensagens
-js/modulos/eventos.js    Ouvintes delegados
-js/vendor/              Reservado; nenhuma biblioteca externa utilizada
-testes/regras.test.js    Testes automatizados
-servidor.cjs             Servidor local de demonstração
-```
+## Arquitetura
 
-## Dados e limites
+- `html/index.html`: documento e templates semânticos.
+- `css/style.css`: design system rosa e layout responsivo.
+- `imagens/doce-acao.svg`: ilustração vetorial original.
+- `js/main.js`: inicialização.
+- `js/modulos/`: dados, roteador, templates, armazenamento, validação, formulário, interface e eventos.
+- `scripts/`: minificação e medição de contraste.
+- `testes/`: testes das regras e auditoria axe.
+- `docs/`: evidências e documentação técnica.
+- `dist/`: saída gerada, única pasta a publicar.
 
-A ONG e seus contatos são fictícios. O cadastro é uma simulação, não envia dados pessoais nem cria inscrições reais. Nome, CPF, telefone, e-mail, CEP e cidade são descartados após o envio demonstrativo e não são salvos no armazenamento local. Use somente dados fictícios ao testar.
+Os módulos comunicam-se por import/export. Eventos delegados evitam duplicação após trocar os templates. As regras de validação são testáveis fora do navegador. Não há backend, banco, autenticação, pagamento ou API externa.
 
-A chave `doceAcao:preferencias:v1` guarda apenas versão, identificadores de favoritos e opção de colaboração. As preferências pertencem à origem do navegador (endereço e porta); não acompanham o ZIP. O botão no cadastro remove a preferência de colaboração; os botões dos cartões removem os favoritos.
+## Dados e segurança
 
-As validações de formato não comprovam identidade, existência de e-mail ou endereço. Um uso real exigiria backend, validação no servidor, segurança e política de tratamento de dados. Não há dependência de CDN, biblioteca externa, autenticação ou integração de pagamento.
+A chave `doceAcao:preferencias:v1` guarda somente versão, IDs dos favoritos e forma de colaboração. Nome, CPF, telefone, e-mail, CEP e cidade não são armazenados nem enviados. A validação verifica formato, não identidade ou existência de endereço. Entradas são normalizadas; erros do armazenamento têm alternativa em memória. Conteúdo dinâmico usa textContent e createElement.
 
-## Testes
+Não publique node_modules, .git, arquivos .env ou dados reais de voluntários. Um uso real exigiria backend, validação no servidor, gestão segura dos dados e avaliação da infraestrutura. Os contatos fictícios foram removidos para evitar acionamento de canais reais por engano.
 
-```text
-node --test testes/regras.test.js
-```
+## Acessibilidade e testes
 
-Consulte `RELATORIO-TESTES.md` para o escopo e os resultados observados.
+Idioma pt-BR, landmarks, títulos, skip link, controles nativos, foco visível, navegação por teclado, diálogo, labels, fieldset/legend, aria-describedby, aria-invalid e regiões de estado. O CSS respeita movimento reduzido e cores forçadas. Os nomes acessíveis dos favoritos contêm seus textos visíveis.
+
+Para repetir axe: gere o build, inicie o servidor e abra http://127.0.0.1:8766/testes/acessibilidade.html. Clique “Executar auditoria”. O escopo usa tags WCAG 2.0/2.1 A/AA. Consulte docs/auditoria-axe.json e docs/ACESSIBILIDADE.md. Testes automáticos não comprovam conformidade integral.
+
+## Build e performance
+
+esbuild minifica módulos JavaScript e CSS; html-minifier-terser reduz HTML; SVGO otimiza o vetor preservando nome/descrição. As dependências são ferramentas de desenvolvimento e não integram o site. Não há CDN, fontes externas ou rastreadores.
+
+O build lê apenas arquivos do projeto, mantém o código fonte legível e não remove diretórios recursivamente. Reexecutá-lo atualiza os arquivos gerados. Caso um módulo seja removido do código, revise arquivos obsoletos em dist antes da publicação. docs/metricas-build.json registra bytes antes/depois e estimativa gzip; a compressão HTTP real depende da hospedagem.
+
+## GitFlow e revisão
+
+main contém versões estáveis; develop integra alterações; feature/acessibilidade-ep4 isola a EP4; release/1.0.0 prepara o lançamento. Hotfixes serão criados somente quando necessários. Commits usam chore, fix, build, docs e test. SemVer: major para incompatibilidades, minor para funcionalidades compatíveis, patch para correções.
+
+Antes de integrar: revisar diff, testes, build, teclado e tela móvel. Projeto individual: autorrevisão não equivale à aprovação de um segundo colaborador. Use o modelo de pull request em .github/pull_request_template.md.
+
+## Publicação e manutenção
+
+Proposta: GitHub Pages via Actions. A publicação é manual, após revisão e autorização. Configure Pages com origem GitHub Actions. O workflow testa, compila e publica somente dist. CI verifica branches e pull requests sem publicar.
+
+Para rollback, reverta o commit com problema por um novo commit em main e publique novamente; preserve o histórico. O estado efetivo de repositório, PR e publicação será registrado em docs/ENTREGA.md após verificação.
+
+## Referências oficiais
+
+- https://www.w3.org/TR/WCAG21/
+- https://github.com/dequelabs/axe-core
+- https://esbuild.github.io/
+- https://svgo.dev/
+- https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages
