@@ -1,0 +1,79 @@
+{
+  "data": "2026-10-05T17:35:08.585Z",
+  "axe": "4.13.0",
+  "resultados": [
+    {
+      "rota": "inicio",
+      "violacoes": [],
+      "incompletos": [
+        {
+          "id": "color-contrast",
+          "descricao": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nos": [
+            [
+              ".submenu-toggle"
+            ],
+            [
+              ".destaque"
+            ],
+            [
+              "h1"
+            ],
+            [
+              "p:nth-child(3)"
+            ]
+          ]
+        }
+      ],
+      "verificacoesAprovadas": 20
+    },
+    {
+      "rota": "projetos",
+      "violacoes": [],
+      "incompletos": [
+        {
+          "id": "color-contrast",
+          "descricao": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nos": [
+            [
+              ".submenu-toggle"
+            ]
+          ]
+        }
+      ],
+      "verificacoesAprovadas": 24
+    },
+    {
+      "rota": "cadastro",
+      "violacoes": [],
+      "incompletos": [
+        {
+          "id": "color-contrast",
+          "descricao": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nos": [
+            [
+              ".submenu-toggle"
+            ]
+          ]
+        }
+      ],
+      "verificacoesAprovadas": 25
+    },
+    {
+      "rota": "cadastro-erros",
+      "violacoes": [],
+      "incompletos": [
+        {
+          "id": "color-contrast",
+          "descricao": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nos": [
+            [
+              ".submenu-toggle"
+            ]
+          ]
+        }
+      ],
+      "verificacoesAprovadas": 25
+    }
+  ]
+}
