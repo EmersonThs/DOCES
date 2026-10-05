@@ -1,0 +1,20 @@
+name: Verificar projeto
+on:
+  push:
+    branches: [develop, 'feature/**', 'release/**']
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  validar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm install --global pnpm@11.25.0
+      - run: pnpm install --frozen-lockfile --ignore-scripts
+      - run: pnpm test
+      - run: pnpm run contraste
+      - run: pnpm run build

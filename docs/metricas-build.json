@@ -1,0 +1,30 @@
+[
+  {
+    "tipo": "JavaScript (módulos)",
+    "origem": 16636,
+    "build": 12384,
+    "reducao": "25.6%",
+    "gzipEstimado": 5915
+  },
+  {
+    "tipo": "HTML",
+    "origem": 11233,
+    "build": 9120,
+    "reducao": "18.8%",
+    "gzipEstimado": 2894
+  },
+  {
+    "tipo": "CSS",
+    "origem": 12470,
+    "build": 10330,
+    "reducao": "17.2%",
+    "gzipEstimado": 2719
+  },
+  {
+    "tipo": "SVG",
+    "origem": 1340,
+    "build": 1198,
+    "reducao": "10.6%",
+    "gzipEstimado": 623
+  }
+]

@@ -1,1 +1,16 @@
-{"name":"doce-acao-ep3","private":true,"type":"module","scripts":{"test":"node --test testes/*.test.js","start":"node servidor.cjs"},"devDependencies":{"axe-core":"4.13.0","esbuild":"0.28.2","html-minifier-terser":"7.2.0","svgo":"4.1.0"}}
+{
+  "name": "doce-acao-ep4",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@11.25.0",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "test": "node --test testes/*.test.js",
+    "start": "node servidor.cjs",
+    "build": "node scripts/build.mjs",
+    "preview": "node servidor.cjs --dist",
+    "contraste": "node scripts/contraste.mjs"
+  },
+  "devDependencies": { "axe-core": "4.13.0", "esbuild": "0.28.2", "html-minifier-terser": "7.2.0", "svgo": "4.1.0" }
+}
