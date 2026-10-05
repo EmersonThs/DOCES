@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="390" viewBox="0 0 560 390" role="img" aria-labelledby="title desc">
+  <title id="title">Caixa de doces da ONG Doce Ação</title>
+  <desc id="desc">Ilustração decorativa de uma caixa com cupcakes e corações.</desc>
+  <rect width="560" height="390" rx="30" fill="#fff1f5"/>
+  <circle cx="100" cy="78" r="18" fill="#f4a7be"/>
+  <circle cx="466" cy="102" r="13" fill="#e8789a"/>
+  <path d="M90 112 C72 92 42 111 52 137 C60 156 90 173 90 173 C90 173 120 156 128 137 C138 111 108 92 90 112Z" fill="#b93c67"/>
+  <path d="M456 156 C442 139 418 151 424 172 C430 188 456 202 456 202 C456 202 482 188 488 172 C494 151 470 139 456 156Z" fill="#842747"/>
+  <rect x="135" y="205" width="290" height="118" rx="16" fill="#d88aa5"/>
+  <path d="M160 205 L195 150 L230 205" fill="#ffe2ea"/>
+  <path d="M245 205 L280 145 L315 205" fill="#fff4d6"/>
+  <path d="M330 205 L365 152 L400 205" fill="#ffe2ea"/>
+  <circle cx="195" cy="158" r="10" fill="#b93c67"/>
+  <circle cx="280" cy="153" r="10" fill="#b93c67"/>
+  <circle cx="365" cy="160" r="10" fill="#b93c67"/>
+  <rect x="158" y="241" width="244" height="50" rx="10" fill="#fffaf4"/>
+  <text x="280" y="273" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#842747">DOCE AÇÃO</text>
+</svg>
