@@ -10,6 +10,13 @@
 - Quatro cenários axe sem violações automáticas, com revisão manual dos contrastes inconclusivos.
 - Pacote dist minificado e conferido no Chrome.
 
-## Pendente de confirmação remota
+## Confirmado no GitHub
 
-Envio ao repositório EmersonThs/DOCES, pull requests, integração de release e publicação no GitHub Pages. O repositório foi consultado e estava vazio. Os endereços e resultados serão registrados depois de verificados. Nenhuma revisão por um segundo colaborador é alegada.
+- Código enviado a https://github.com/EmersonThs/DOCES.
+- PR #1 integrou feature/acessibilidade-ep4 em develop: https://github.com/EmersonThs/DOCES/pull/1.
+- Duas verificações automáticas aprovadas antes da integração.
+- Branch release/1.0.0 criada a partir de develop para preparar a entrega.
+
+## Pendente de confirmação
+
+Integração da release em main e publicação no GitHub Pages. A publicação foi autorizada pelo responsável, mas só será descrita como realizada depois da confirmação do endereço público. Nenhuma revisão por um segundo colaborador é alegada.
